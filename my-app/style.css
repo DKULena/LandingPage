@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "SpoqaHanSansNeo-Regular", "Helvetica Neue", Helvetica,
+    sans-serif;
+}
+
+.button {
+  padding: 15px 29px;
+  background-color: #d97652;
+  border-radius: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2e9d8;
+  padding: 31px 320px;
+
+  .headerLogo img {
+    width: 130px;
+    height: 40px;
+  }
+
+  .headerNav {
+    display: flex;
+    align-items: center;
+    ul {
+      display: flex;
+      gap: 30px;
+      li {
+        line-height: 20px;
+        font-size: 1rem;
+      }
+    }
+    .button {
+      margin-left: 40px;
+    }
+  }
+}
+.banner {
+  background: no-repeat url("./img/box-cat.png");
+  background-position: calc(100% - 20rem);
+  background-color: #f2e9d8;
+  padding: 0px 320px;
+  height: 798px;
+
+  .bannerTitle {
+    padding-top: 200px;
+    width: 737px;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 60px;
+  }
+
+  .bannerDescription {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px;
+    width: 439px;
+
+    firstLine,
+    secondLine {
+      display: block;
+      font-size: 1rem;
+      line-height: 20px;
+    }
+  }
+  .button {
+    display: inline-block;
+  }
+}
+.mainArticle {
+  display: flex;
+  align-items: center;
+  gap: 110px;
+  margin: 80px 320px 120px 320px;
+
+  img {
+    width: 660px;
+    height: 390px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0px #00000040;
+    object-fit: cover;
+  }
+
+  .mainArticleContainer {
+    width: 510px;
+
+    .mainArticleTitle {
+      font-size: 2.25rem;
+      font-weight: bold;
+      line-height: 45px;
+      margin-bottom: 30px;
+    }
+  }
+}
+.secondaryArticle {
+  margin: 0 320px 90px 320px;
+
+  .secondaryArticleTitle {
+    font-size: 3rem;
+    line-height: 60px;
+    font-weight: bold;
+    color: #D97652;
+    text-align: center;
+  }
+
+.secondaryArticleDescriptionContainer{
+  margin: 40px 0 88px 0;
+  .secondaryArticleDescription {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 20px;
+    strong {
+      font-weight: bold;
+      color: #D97652;
+    }
+  }
+}
+
+.secondaryArticleImageContainer  ul{
+  display: flex;
+  gap: 72px;
+  img {
+    width: 378px;
+    height: 378px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 30px 0px #00000040;
+  }
+}
+}
+.aboutPage {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  margin: 0 491px 196px 491px;
+
+  .aboutPageDescriptionContainer {
+    width: 739px;
+    font-size: 1rem;
+    line-height: 20px
+  }
+
+  a{
+    white-space: nowrap;
+  }
+}
+footer {
+  position: relative;
+
+  .subscribe {
+    position: absolute;
+    bottom: 75%;
+    background-color: #263140;
+    margin: 0 320px;
+    padding: 50px 0;
+    min-width: 1280px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+  
+    .subscribeContainer {
+      color: #ffffff;
+      width: 491px;
+      margin-bottom: 18px;
+  
+      .subscribeTitle {
+        font-weight: bold;
+        font-size: 2.25rem;
+        line-height: 46px;
+        margin-bottom: 18px;
+      }
+      .subscribeDescription {
+        font-size: 0.875rem;
+        line-height: 17px;
+        color: #F2E9D8;
+  
+      }
+    }
+  
+    .subscribeEmailBox {
+      display: flex;
+      
+      align-items: center;
+      border-radius: 60px;
+      background-color: #ffffff;
+      width: 530px;
+      height: 60px;
+  
+      img {
+        margin: 0 16px 0 28px;
+      }
+  
+      input {
+        border: none;
+        margin-right: 150px;
+      }
+    }
+  }
+.catBg {
+  width: 100%;
+  height: 340px;
+  position: relative;
+  background: url(./img/img_5.jpg);
+  background-position: center 38%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.catBg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 233, 216, 0.6);
+}
+  .footerContainer {
+    display: flex;
+    margin: 45px 320px;
+          justify-content: space-between;
+    align-items: center;
+
+    .footerLogo {
+      width: 226px;
+      height: 70px;
+    }
+    .footerNav ul {
+      display: flex;
+      gap: 20px;
+      
+      li {
+        background-color: #F29D52;
+        border-radius: 50%;
+        padding: 9px;
+      }
+    }
+  }
+}
+
+
