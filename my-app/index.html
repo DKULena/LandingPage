@@ -10,13 +10,15 @@
   <body>
     <header>
       <div class="headerLogo">
-        <img src="./img/logo.png" alt="랜딩 페이지 로고 호두" />
+        <a href="#">
+          <img src="./img/logo.png" alt="랜딩 페이지 로고 호두" />
+        </a>
       </div>
       <nav class="headerNav">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Support</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Support</a></li>
         </ul>
         <a href="#" class="button">Download</a>
       </nav>
@@ -88,7 +90,6 @@
         <a href="#" class="button">Learn More</a>
       </article>
     </main>
-
     <footer>
       <aside class="subscribe">
         <div class="subscribeContainer">
@@ -109,7 +110,7 @@
             placeholder="Enter your e-mail address"
             class="subscribEmailBox"
           />
-          <a href="#" class="button">Subscribe</a>
+          <a href="#" class="button" id="subscribe">Subscribe</a>
         </div>
       </aside>
       <div class="catBg"></div>
@@ -145,5 +146,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay"></div>
+    <aside role="dialog" class="modal">
+      <div class="modalContainer">
+        <img src="./public/img/cat-subscribe.png" alt="귀여운 호두 얼굴" class="modalContainerImage">
+        <strong class="modalContainerThx">Thank you</strong>
+        <span class="modalContainerDescription">Lorem Ipsum is simply dummy text of the printing industry.</span>
+        <a href="#" class="button" id="closeBtn">OK! I Love HODU</a>
+      </div>
+    </aside>
+
+    <script src="main.js"></script>
   </body>
 </html>
